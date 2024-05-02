@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Import Products With Printing Options Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="assets/blueprint-css/image.css" type="text/css">
+	<link rel="stylesheet" href="assets/js/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+	<script type='text/javascript' src='assets/js/jquery.js'></script>
+	<script src="assets/js/prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
+	<script type='text/javascript' src='assets/js/custom.js'></script>
+</head>
+
+<body>
+	<div class="container">
+		<h3 class="center alt"><span class="center">Import Products with Printing Options Woocommerce Plugin</span> Documentation by &ldquo; ShareSoft Technology &rdquo; v1.0</h3>
+		<hr/>
+		<h1 class="center">Using REST APIs Import Products With Printing Options Woocommerce Plugin </h1>
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 28-10-2023<br>
+					Last Update: 28-10-2023<br>
+					By: ShareSoft Technology <br>
+					Email: <a href="mailto:info@sharesoft.in"> ShareSoft Technology </a>
+					</strong></p>
+				<p class="prepend-top"><span class="small">Information about updates and new features in Plugin are announced on our Social Networks - Twitter and Facebook. Follow us on <a target="_blank" href="https://twitter.com/sharesofttec">Twitter</a> to stay tuned on updates and Connect with us on <a href="https://www.facebook.com/sharesofttec/" target="_blank">Facebook</a> for more detailed updates	</span><br/>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><strong>Hello! We would like to thank you for purchasing our plugin! :) </strong><br></p>
+				<p class="prepend-top append-0">This file will explain you how to set up and use the “Import products With Printing Options” WordPress plugin. <br>
+					This file looks extensive so you might think that, the plugin is hard to use, but actually it's not! You probably might jump to the options page and explore everything yourself. This file is more of a reference help, if you do not know what to do, or if you are not familiar with WordPress.</p>
+				<p class="prepend-top append-0">Have fun with your new plugin! <br><br> 
+				<strong>Best regards, <br>ShareSoft Technology</strong></p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr/>
+
+		<div class='toc'>
+			<h2 id="toc" class="alt">Table of Contents</h2>
+			<ol class="alpha">
+				<li><a href="#plugin-overview">Overview</a></li>
+				<li><a href="#install-plugin-func">How the plugin functions  </a>
+					<ol>
+						<li><a href="#admin">Admin features</a></li>
+						<li><a href="#FrontEnd">FrontEnd features</a></li>
+					</ol>
+				</li>
+								
+			</ol>
+		</div>
+		<hr/>
+		
+		<div class='real_content'>
+			<h2><span id="plugin-overview"><strong>Overview</strong> - <a href="#toc">top</a></span></h2>
+			<!-- <p>The "Import Products with Printing Options" plugin enables users to import products into a platform using an API. Once imported, the plugin offers various features related to product customization, including printing options, adding products to the cart, uploading logos, and managing multiple variations of items, plugin includes a feature that allows users to stop an ongoing import process and reset it</p> -->
+			<b>Enhance the "Import Products with Printing Options" plugin for WooCommerce Import products using various RESTful APIs with the following comprehensive features:</b><br><br>
+			<b>Customizable Import Settings: </b>
+			<p>Allow users to specify import criteria such as data fields, pricing adjustments, and category mappings to tailor the import process to their needs.</p>
+			<b>Advanced Logging and Error Handling:</b>
+			<p>Implement detailed logging of import activities and errors for comprehensive monitoring and troubleshooting.</p>
+			<b>API-Driven Category Mapping:</b>
+			<p>Utilize RESTful APIs to automatically map imported product categories to corresponding website categories, ensuring accurate catalog organization.</p>
+			<b>Scheduled Imports with Cron:</b>
+			<p>Enable automated imports at scheduled intervals using cron jobs for full product updates and real-time price/stock adjustments.</p>
+			<b>Discounts and Pricing Tables:</b>
+			<p>Utilize API pricing data to apply quantity-based discounts and display pricing tables for products, enhancing flexibility in pricing strategies.</p>
+			<b>Focused Printing Management:</b>
+			<p>Exclude API products from custom printing groups when assigning products for printing, ensuring a focused and tailored approach to printing management.</p>
+			<p>These enhancements collectively optimize product management, streamline import processes, and elevate user experience within a concise and effective framework, covering customizable settings, advanced logging, category mapping, scheduled updates, user permissions, API integration, discount handling, and specialized printing management.</p>
+			<hr/>
+
+			<h2><span id="install-plugin-func"><strong>How the plugin functions - <a href="#toc">top</a></strong></span></h2>
+
+			<h2><span id="admin"><strong>3.1 Admin features-<a href="#toc">top</a></strong></span></h2>
+				<ul>
+					<li>After activating the Import Products with Printing Options plugin, next you have to manage Custom admin menu settings.</li>
+					<li>Click Import Products Menu</li>
+                </ul>
+                <p>Image below, explains how the tabs are used.</p>				
+				<img src="assets/images/admin-images/import-tab.png" class="bordergrey_leftttbottom"><br>
+				
+				<p>Image below , On the Import Products WooCommerce dashboard, you'll see a list of available options fields to Import.</p>
+				<img src="assets/images/admin-images/beforeimport.png" class="bordergrey_leftttbottom"><br>
+				
+				<ul>
+					<li>1. shows when Price increase (%) is set 0 it shows the default price 
+						- increase on (% value) increses the price value too. [ie) value is 5 then price value increses from 5% in addition to normal price]</li>
+					<li>2. shows the total number of product that the batch need to have. [ ie) If 10 is set then product import by 10 in a batch ]</li>
+					<li>3. If you need Include variation image too then click on check box or else no need to check on it .</li>
+					<li>4. Then click on import , To indicate the importing process there appears a progress bar .</li>
+				</ul>
+
+				
+				<p>Image below ,includes a feature that allows users to stop an ongoing import process and reset it. Additionally, the plugin stores the retrieved data in a JSON file inside the <b>uploads/auto-laltex-products </b>folder.</p>
+				<img src="assets/images/admin-images/import-process.png" class="bordergrey_leftttbottom"><br>
+				<p>when a certain number of given batch import is completed then there appears an info message of successful completion</p>
+				<p><b>Updated Features : </b> Allow users to specify import criteria such as Import Product Categories fields, pricing fields, and category fields to tailor the import process to their needs.</p>
+				<img src="assets/images/admin-images/Import-auto-laltex-settings.png" class="bordergrey_leftttbottom"><br>
+				<br>
+               	<p>Image below, Created Product details custom tabs and retrive api product details custom fields.</p>
+				<img src="assets/images/admin-images/product-detailstab.png" class="bordergrey_leftttbottom"><br>
+
+               	<p>Image below, to display retrived api Printing details created custom tab and store the printing details.</p>			
+				<img src="assets/images/admin-images/printing-tabs.png" class="bordergrey_leftttbottom"><br>
+		
+				<img src="assets/images/admin-images/printing-positions.png" class="bordergrey_leftttbottom"><br>
+
+				<p>Below Image, Advanced Options: Users can preview the logo in multiple positions (up to a specific number, as defined by the plugin). They can switch between positions to compare how the logo looks in each Printing Positions. </p>
+				<img src="assets/images/admin-images/logo-previewfinal.png" class="bordergrey_leftttbottom"><br>
+				
+				<p>Below Image, The Category Mapping feature streamlines product categorization by allowing users to easily associate multiple API categories with corresponding website categories. This flexible and efficient mapping process ensures accurate alignment, simplifying the management of diverse product catalogs. Users can effortlessly synchronize and organize their products, enhancing the overall user experience.</p>
+				<img src="assets/images/additional-features/category-mapping.png" class="bordergrey_leftttbottom"><br>
+
+				<p>Below Image, When creating a custom printing group and assigning products, the printing details are generated excluding API products, ensuring a focused and tailored approach to printing management.</p>
+				<img src="assets/images/additional-features/create-matrix-group.png" class="bordergrey_leftttbottom"><br>
+
+
+				<p>Below Image, Select the Printing Matrix Group to Assign the Printing Details For the Product.</p>
+				<img src="assets/images/additional-features/assign-matrix.png" class="bordergrey_leftttbottom"><br>
+
+				<p>Below Image, Products are imported through cron jobs, with created imported logs meticulously listed for easy reference and monitoring, streamlining the import process for enhanced efficiency and organization.</p>
+				<img src="assets/images/additional-features/import-logs.png" class="bordergrey_leftttbottom"><br>
+				
+			<hr/>
+			<h2><span id="FrontEnd"><strong>3.2 Output view - <a href="#toc">top</a></strong></span></h2>
+			<p>  
+			<strong>Image below shows that, Display the imported products with relevant details such as product name, description, images, and other specifications.
+				Provide a user-friendly interface that showcases the products neatly for easy browsing</strong><br/>
+			</p>
+			<p>Below image shows,</p>
+			<ul>
+				<li>Price Ranges Table: Implement a dynamic price ranges table based on user quantity selection.
+					Allow users to input the desired quantity and dynamically calculate the price based on the selected quantity. Display this information in a clear and easy-to-understand table format.
+				</li>
+				<li>
+					The "Buy Decorated" Button:  Plugin offers a custom process for adding products to the cart. This process is specifically designed to accommodate products with printing options, allowing users to customize and purchase them seamlessly.
+				</li>
+			</ul>
+			<img src="assets/images/frontend-images/product-view.png" class="bordergrey_leftttbottom"><br>			
+
+			<p>Below image shows that display popup product and printing details cusotmization options.</p>
+			<img src="assets/images/frontend-images/product-calulation.png" class="bordergrey_leftttbottom"><br>
+			<p>Below images shows that, </p>
+			<ul>
+				<li>1. Logo Upload and Zoom:</li>
+				<p>Users can upload logos, which can be zoomed in for detailed inspection.</p>
+				
+				<li>2. Multiple Print Positions:</li>
+				<p>Users can choose from various print positions on the product (e.g., front, back, sleeve).</p>
+				<li>3. Print Position Customization:</li>
+
+				<p>Customization options for each print position include logo placement, size, and orientation adjustments.</p>
+				<li>4. Print Technology and Color Selection:</li>
+
+				<p>Users can select print technologies (e.g., screen printing, embroidery) and logo colors.
+					Pricing is calculated based on the chosen print technology, number of colors, and other factors.</p>
+				<li>5. Preview and Confirmation:</li>
+
+				<p>Users can preview their customizations, including logo placement, print positions, and colors.
+					Confirmation option to add the customized product items to the cart.</p>
+			</ul>
+			<img src="assets/images/frontend-images/printing-options.png" class="bordergrey_leftttbottom"><br>
+
+			<img src="assets/images/frontend-images/upload-logo.png" class="bordergrey_leftttbottom"><br>
+
+			<img src="assets/images/frontend-images/logo-settings.png" class="bordergrey_leftttbottom"><br>
+
+			<img src="assets/images/frontend-images/items-addcart.png" class="bordergrey_leftttbottom"><br>
+
+			<p>After click here to  add to cart button Add the selected items to be cart.</p><br>
+			<h3>Cart Page View</h3>
+			<p>Below images shows that, selected items display grouped on cart page also displayed customization printing details,</p>
+			<img src="assets/images/cart-images/cart-items.png" class="bordergrey_leftttbottom"><br>
+
+			<p>Below images shows that, Added calculated Printing and setup cost amount.,</p>
+			<img src="assets/images/cart-images/cart-fees.png" class="bordergrey_leftttbottom"><br>
+
+			<h3>Order Page View</h3>
+			<p>Below images shows that, View Orders to display grouped items and Display listed their product customization Printing details</p>
+			<img src="assets/images/orders-images/ordersdisplay.png" class="bordergrey_leftttbottom"><br>
+			<hr/>
+			<p>Once again, thank you so much for purchasing this plugin. As we said at the beginning, We would be glad to help you, if you have any questions related to this plugin.</p> 
+			<!-- https://adgiftdiscounts.com/product/cooler-bag-6/ -->
+
+			<p class="append-bottom alt large"><strong>ShareSoft Technology</strong></p>
+			<p><a href="#toc">Go To Table of Contents</a></p>					
+			<hr class="space">
+			</p>
+				
+		</div>
+    </div><!-- end div .container -->
+</body>
+</html>
